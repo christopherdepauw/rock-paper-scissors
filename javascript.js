@@ -1,5 +1,6 @@
 let randomChoice = Math.floor(Math.random() * 3);
 
+
 function getComputerChoice(rock, paper, scissors) {
     if (randomChoice === 0) { 
         return "rock";
@@ -9,7 +10,41 @@ function getComputerChoice(rock, paper, scissors) {
         return "scissors"; 
     }
 }
-console.log(getComputerChoice())
+console.log(getComputerChoice());
+
+
+const playerSelection = "paper".toLowerCase();
+console.log(playerSelection);
+
+const computerSelection = getComputerChoice();
+
+
+function playRound(playerSelection, computerSelection) {
+      if (playerSelection === "rock" && computerSelection === "scissors") {
+        return "You win! Rock beats scissors!";
+      } else if (playerSelection === "scissors" && computerSelection === "paper") {
+        return "You win! Scissors beats rock!";
+      } else if (playerSelection === "paper" && computerSelection === "rock") {
+        return "You win! Paper beats rock!";
+      } else if (computerSelection === "rock" && playerSelection === "scissors") {
+        return "You lose! Rock beats scissors!";
+      } else if (computerSelection === "scissors" && playerSelection === "paper") {
+        return "You lose! Scissors beats paper!";
+      } else if (computerSelection === "paper" && playerSelection === "rock") {
+        return "You lose! Paper beats rock!";
+      } else if (playerSelection === computerSelection) {
+        return "It's a tie! Replay round!";
+    }
+}
+
+
+console.log(playRound(playerSelection, computerSelection));
+    
+
+
+
+
+
 
 
 
