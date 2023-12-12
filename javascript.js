@@ -1,4 +1,7 @@
 let randomChoice = Math.floor(Math.random() * 3);
+const userInput = prompt("Rock, paper, or scissors");
+const playerSelection = userInput.toLowerCase();
+console.log(playerSelection);
 
 
 function getComputerChoice(rock, paper, scissors) {
@@ -13,8 +16,6 @@ function getComputerChoice(rock, paper, scissors) {
 console.log(getComputerChoice());
 
 
-const playerSelection = "paper".toLowerCase();
-console.log(playerSelection);
 
 const computerSelection = getComputerChoice();
 
