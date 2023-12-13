@@ -23,7 +23,9 @@ console.log(getComputerChoice());
 let playerSelection = getUserChoice();
 let computerSelection = getComputerChoice();
 
-    function playRound() {
+    function playRound(playerSelection, computerSelection) {
+        playerSelection = getUserChoice();
+        computerSelection = getComputerChoice();
         if (playerSelection === computerSelection) {
             return "tie",
             replayRound();
@@ -46,7 +48,7 @@ let computerSelection = getComputerChoice();
 
         console.log(playRound());
 
-        function replayRound() {
+        function replayRound(playerSelection, computerSelection) {
             randomChoice = Math.floor(Math.random() * 3);
             userInput = prompt("Rock, paper, or scissors");
             playerSelection = getUserChoice();
@@ -58,6 +60,45 @@ let computerSelection = getComputerChoice();
             return playRound(playerSelection, computerSelection);
         }
         
+    
+
+       
+    
+
+
+
+
+
+
+
+
+
+
+       
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+   /* if(userWins === 1) {
+        score = 'Wins: ';
+    }
+    score += playRound("win") + ' ';
+    if(computerWins === 1) {
+        score = 'Losses: ';
+    }
+    score += playRound("loss") + ' ';
+
+    score++; */
     
 
        
