@@ -25,8 +25,11 @@ let computerScore = 0;
     const roundLoss = "computer wins round.";
     const tieGame = "Tie game, replay round.";
     const inputError = "Error. Only enter rock, paper, or scissors. Replay round.";
-          
+
     
+    
+    
+  function game() {
     for (i = 0; i < 50; i++) {
     let randomChoice = Math.floor(Math.random() * 3);
     
@@ -52,12 +55,10 @@ let computerScore = 0;
     gameScore(roundResult);
     console.log("Your score is " + playerScore);
     console.log("Computer score is " + computerScore);
-    if (playerScore === 3 || computerScore === 3) {
+    if (computerScore === 3 || playerScore === 3) {
         break;
     }
-  }
-
-
+    }
     function gameScore(roundResult) {
         if (roundResult === roundWin) {
             playerScore++;
@@ -71,5 +72,12 @@ let computerScore = 0;
     } else if (computerScore === 3 ) {
         console.log("Game over. Computer wins match " + computerScore + " games to " + playerScore + ". ");
     }
+   }
+   game();
 
+
+  
+
+
+  
   
