@@ -1,1 +1,2 @@
 # rock-paper-scissors
+A simple, function-based rock-paper-scissors program operating in the console. This project will demonstrate a base understanding for javascript fundamentals, particularly use of functions, expressions, and for (loop). This is my first experience writing javascript. 
